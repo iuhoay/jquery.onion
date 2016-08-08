@@ -1,7 +1,7 @@
 /**
  * jquery.onion
  *
- * 0.0.1
+ * 0.0.2
  *
  * image lightbox
  */
@@ -19,7 +19,7 @@
           }),
         $bigimg = $("<img>").addClass('onion-img').appendTo($overflow)
 
-    $el.each(function() {
+    return this.each(function() {
       $(this).on('click', function(e) {
         e.preventDefault()
         $bigimg.prop('src', $(this).prop('href'))
